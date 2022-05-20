@@ -2,7 +2,8 @@ package com.nhuallpa.accounts.application.port.in;
 
 import com.nhuallpa.accounts.domain.BalanceAccount;
 
-public interface GetBalanceUseCase {
+import java.util.function.Function;
 
-    public BalanceAccount getBalance();
+public interface GetBalanceUseCase extends Function<String, BalanceAccount> {
+
 }
